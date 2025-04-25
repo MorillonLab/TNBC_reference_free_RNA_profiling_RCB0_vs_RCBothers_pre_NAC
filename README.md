@@ -9,12 +9,7 @@
      
    ![](https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/heatmap_CV_design_5folds_5timesRepeated_CV.pdf)
 
-  3) Conditions are compared with a zero-inflated wilcoxon rank test, without the left-out block (script :)
-
-
-
-
-https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getCrossValidationAnalysis.sh
+  3) Conditions are compared with a zero-inflated wilcoxon rank test, without the left-out block (script : [https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getCrossValidationAnalysis.sh])
 
 ## Contacts 
 
