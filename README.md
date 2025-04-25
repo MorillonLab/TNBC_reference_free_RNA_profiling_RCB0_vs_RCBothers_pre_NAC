@@ -19,7 +19,7 @@
      - Results : tables of train and test sets from samples of both conditions (test sets are the left-out blocks)
      - Credits for the scripts : Daniel GAUTHERET (daniel.gautheret@universite-paris-saclay.fr, team leader), Hugues HERRMANN (hugues.herrmann@universite-paris-saclay.fr), Haoliang XUE (xue.haoliang@outlook.com)
      
-     Here is the visual result to compare the conditions by a 5x5-fold selection :
+     Here is the visual result to compare the conditions by a 5x5-fold selection (computed with https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/check_CV_design.sh, that calls https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/check_CV_design.R & https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/check_CV_design.sh & https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getTransposedLines.awk):
   
    ![](heatmap_CV_design_5folds_5timesRepeated_CV.png)
 
