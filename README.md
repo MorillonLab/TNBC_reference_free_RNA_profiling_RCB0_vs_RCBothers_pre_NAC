@@ -2,7 +2,7 @@
 
 
 ## Scripts
-gene counting with kallisto : https://github.com/MorillonLab/DIS3_analysis/blob/main/getKallistoCounts.sh
+gene counting with kallisto (adapt input variables to your own data in "input variables") : https://github.com/MorillonLab/DIS3_analysis/blob/main/getKallistoCounts.sh
 
 ## Contacts 
 
