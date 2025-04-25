@@ -1,0 +1,6 @@
+{
+  "out_dir": "/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_60_genes_test7/CV_design_dir/",
+  "design": "/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_60_genes_test7/train_design.tsv",
+  "n_repeats": 5,
+  "k_fold": 5
+}
