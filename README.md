@@ -3,7 +3,7 @@
 
 ## Scripts
 - get gene counts with kallisto (adapt input variables to your own data in "input variables") : https://github.com/MorillonLab/DIS3_analysis/blob/main/getKallistoCounts.sh
-- get differential expression by 5x5 folds selection, inspired by the Leave-P-out cross-validaton. Samples of each condition are divided into 5 blocks. For each condition, one block is left-out, and the conditions are compared with a zero-inflated wilcoxon rank test (without the left-out block). The process is reconducted, until all the blocks have been at least once the left-out block. The process is repeated X times, by randomizing the samples :
+- get differential expression by 5x5 folds selection, inspired by the Leave-P-out cross-validaton. Samples of each condition are divided into 5 blocks. For each condition, one block is left-out, and the conditions are compared with a zero-inflated wilcoxon rank test (without the left-out block). The process is reconducted, until all the blocks have been at least once the left-out block. The process is repeated X times, by randomizing the samples, that gives at the end 25 tables of differentially expressed features :
 
   -1) Samples of each condition are divided into 5 blocks. For each condition, one block is left-out
 
