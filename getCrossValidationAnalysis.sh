@@ -48,11 +48,7 @@ if [ ! -d $output_dir ]; then mkdir -p $output_dir; fi
 if [[ -f $norm_factors_file ]];then
 
   #for nouritza
-  #CPX=1000000
-  
-  
-  #for Anna
-  CPX=1
+  CPX=1000000
 
 #if no norm file, give 1 to CPX
 else
