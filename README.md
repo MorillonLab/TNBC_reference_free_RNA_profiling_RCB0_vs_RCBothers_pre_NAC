@@ -18,7 +18,7 @@
      
      Here is the visual result to compare the conditions by a 5x5-fold selection :
   
-   ![](heatmap_CV_design_5folds_5timesRepeated_CV.pdf)
+   ![](heatmap_CV_design_5folds_5timesRepeated_CV.png)
 
   -2) Conditions are compared with a zero-inflated wilcoxon rank test, without the left-out block
 
