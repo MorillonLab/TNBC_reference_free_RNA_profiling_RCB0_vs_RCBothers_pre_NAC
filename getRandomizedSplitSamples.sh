@@ -1,12 +1,12 @@
 #!/bin/bash
 
+
+####### input variables #######
+
 getTotCountsPerSamples="/home/marcgabriel/Desktop/scripts/getTotCountsPerSamples.sh"
 
 zindex="/home/marcgabriel/Downloads/zindex/build/Release/zindex"
 
-
-#in percent : 2/3 is 66%
-#wanted_train=66
 wanted_train=60
 
 #nb samples with rec_abundance counts
@@ -19,39 +19,16 @@ cond1="RCB0"
 
 cond2="RCBothers"
 
-#matrix_file="/media/marcgabriel/saylar6/Nouritza_kmerCounts_Curie_and_canada_design_RCB0_vs_RCBothers/Nouritza_kmerCounts_Curie_and_canada_design_RCB0_vs_RCBothers_proper_end_1kkk.tsv.gz"
-#matrix_file="/media/marcgabriel/saylar6/Nouritza_kmerCounts_Curie_and_canada_design_RCB0_vs_RCBothers/Nouritza_kmerCounts_Curie_and_canada_design_RCB0_vs_RCBothers_proper_end.tsv.gz"
-#matrix_file="/media/marcgabriel/saylar9/Nouritza_DESeq2_batch123_without_10BadSamples_batchesInfoIncluded_22_02_2023/DESeq_norm_curie_canada_RCB0_vs_RCBothers/raw_counts_matrix.tsv"
 #matrix_file="/media/marcgabriel/saylar9/Nouritza_DESeq2_batch123_without_10BadSamples_batchesInfoIncluded_22_02_2023/DESeq_norm_curie_canada_RCB0_vs_RCBothers/tnbc_reclassified_gene_counts_01_05_2024.tsv.gz"
-
 matrix_file="/media/marcgabriel/saylar6/Nouritza_kmerCounts_Curie_and_canada_design_RCB0_vs_RCBothers/reclassified_TNBC_01_05_2024/Curie_and_canada_design_36RCB0_vs_42RCBothers_reclassified_01_05_2024.tsv.gz"
 
-#output_dir="/media/marcgabriel/saylar6/Nouritza_kmerCounts_Curie_and_canada_design_randomizedAndSplitInTrainAndTest/"
-#output_dir="/media/marcgabriel/saylar6/Nouritza_kmerCounts_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_genes/"
-#output_dir="/media/marcgabriel/saylar6/Nouritza_kmerCounts_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}/"
-#output_dir="/media/marcgabriel/saylar6/Nouritza_kmerCounts_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes/"
-#output_dir="/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes/"
-#output_dir="/media/marcgabriel/saylar6/Nouritza_kmercounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_kmers/"
-
-#output_dir="/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes_test2/"
-#output_dir="/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes_test3/"
-
-#this one is ok 0.0067 RCB0 vs RCBothers (curie) / 0.0071 RCB0 vs RCBothers train ; 0.033 RCB0 vs RCBothers  test
-#output_dir="/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes_test4/"
-
-
-#output_dir="/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes_test5/"
-
-#this one is ok 0.013 RCB0 vs RCBothers train ; 0.024 RCB0 vs RCBothers  test
-#output_dir="/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes_test6/"
-
-#this one is ok 0.0051 RCB0 vs RCBothers train ; 0.039 RCB0 vs RCBothers  test
 #output_dir="/media/marcgabriel/saylar6/Nouritza_genecounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_genes_test7/"
-
 output_dir="/media/marcgabriel/saylar6/Nouritza_kmercounts_01_05_2024_Curie_and_canada_design_randomizedAndSplitInTrainAndTest_wanted_train_${wanted_train}_kmers_test7/"
 
 suffix="kmers"
 #suffix="genes"
+
+#################################
 
 
 output_dir="${output_dir}/"
