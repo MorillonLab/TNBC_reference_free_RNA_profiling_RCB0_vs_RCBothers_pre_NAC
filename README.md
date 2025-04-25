@@ -8,12 +8,16 @@
   -1) Samples of each condition are divided into 5 blocks. For each condition, one block is left-out
 
      -  Run https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/run_make_cross_validation_partitioning.sh (adapt it to your needs)
+       
      - it will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/config_NRTZA_TNBC_RCB0_vs_RCB123_curie_and_canada_10Folds5rep.json (adapt it to your needs) and https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile
+       
      - https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/split_cv.sh (they need to be in the same directory)
+ 
      - Results : tables of train and test sets from samples of both conditions (test sets are the left-out blocks)
   
 
-     here it's a 5x5-fold selection
+     here is the visual result to compare the conditions by a 5x5-fold selection :
+  
    ![]https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/heatmap_CV_design_5folds_5timesRepeated_CV.pdf
 
   -2) Conditions are compared with a zero-inflated wilcoxon rank test, without the left-out block (script : [https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getCrossValidationAnalysis.sh])
