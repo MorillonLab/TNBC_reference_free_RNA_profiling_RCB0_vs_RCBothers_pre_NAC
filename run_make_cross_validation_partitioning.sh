@@ -1,13 +1,5 @@
 #!/bin/bash
 
-#SBATCH --job-name=make_cross_validation_partitioning
-#SBATCH --partition=shortq
-#SBATCH --ntasks=1
-#SBATCH --mem=4gb
-#SBATCH --cpus-per-task=1
-#SBATCH --error=/mnt/beegfs/scratch/h_herrmann/log/make_cross_validation_partitioning.out
-
-
 # ----- Parameters ----- #
 SNAKEMAKE=/home/marcgabriel/.local/bin/snakemake
 SMK=/home/marcgabriel/Downloads/Hugues_cross_validation/marc/make_cross_validation_partitioning/Snakefile
