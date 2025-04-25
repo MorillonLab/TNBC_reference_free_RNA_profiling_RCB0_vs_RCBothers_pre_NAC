@@ -7,9 +7,9 @@
 
   -1) Samples of each condition are divided into 5 blocks. For each condition, one block is left-out
 
-     `-> Run https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/run_make_cross_validation_partitioning.sh (adapt it to your needs)`
-     `-> it will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/config_NRTZA_TNBC_RCB0_vs_RCB123_curie_and_canada_10Folds5rep.json (adapt it to your needs) and https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile`
-  `-> https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/split_cv.sh (they need to be in the same directory)`
+     -  Run https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/run_make_cross_validation_partitioning.sh (adapt it to your needs)
+     - it will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/config_NRTZA_TNBC_RCB0_vs_RCB123_curie_and_canada_10Folds5rep.json (adapt it to your needs) and https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile
+     - https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/split_cv.sh (they need to be in the same directory)
   
 
      here it's a 5x5-fold selection
