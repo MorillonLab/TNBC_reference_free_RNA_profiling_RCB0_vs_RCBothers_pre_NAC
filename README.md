@@ -9,7 +9,7 @@
 
      -  Run https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/run_make_cross_validation_partitioning.sh (adapt it to your needs)
        
-     - it will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/config_NRTZA_TNBC_RCB0_vs_RCB123_curie_and_canada_10Folds5rep.json (adapt it to your needs) and https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile
+     - It will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/config_NRTZA_TNBC_RCB0_vs_RCB123_curie_and_canada_10Folds5rep.json (adapt it to your needs) and https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile
        
      - https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/Snakefile will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/split_cv.sh (they need to be in the same directory)
  
@@ -20,7 +20,11 @@
   
    ![](https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/heatmap_CV_design_5folds_5timesRepeated_CV.pdf)
 
-  -2) Conditions are compared with a zero-inflated wilcoxon rank test, without the left-out block (script : [https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getCrossValidationAnalysis.sh])
+  -2) Conditions are compared with a zero-inflated wilcoxon rank test, without the left-out block
+
+    -  Run https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getCrossValidationAnalysis.sh (adapt input variables to your own data in "input variables")
+    -  It will call https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getGroupedCounts.awk & https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/getZIWfromValues.R (you have to adapt their path in "input variables")
+ 
 
 ## Contacts 
 
