@@ -5,7 +5,7 @@
 - get gene counts with kallisto (adapt input variables to your own data in "input variables") : https://github.com/MorillonLab/DIS3_analysis/blob/main/getKallistoCounts.sh
 - get differential expression by 5x5 folds selection, inspired by the Leave-P-out cross-validaton. Samples of each condition are divided into 5 blocks. For each condition, one block is left-out, and the conditions are compared with a zero-inflated wilcoxon rank test (without the left-out block). The process is reconducted, until all the blocks have been at least once the left-out block. The process is repeated X times, by randomizing the samples :
 
-  -1) For each condition, one block is left-out (script : ):
+  -1) For each condition, one block is left-out (script : https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/run_make_cross_validation_partitioning.sh):
 
      here it's a 5x5-fold selection
    ![]https://github.com/MorillonLab/TNBC_reference_free_RNA_profiling_RCB0_vs_RCBothers_pre_NAC/blob/main/heatmap_CV_design_5folds_5timesRepeated_CV.pdf
