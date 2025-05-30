@@ -173,7 +173,18 @@ for one_train_pos in $(seq 0 $((${#train_list[*]}-1)) );do
 		#echo -e "\n\t-> all cond1 counts pos : $all_samples_cond1_pos ; total counts : $all_norm_factors_cond1\n\n"
 
 		#echo -e "\n\t-> all cond2 counts pos : $all_samples_cond2_pos ; total counts : $all_norm_factors_cond2\n\n"
+
+  		#if train design lines don't match samples found in original matrix, there's an issue (maybe not the right original matrix ?)
+		total_samples=$((${#all_samples_cond2_pos[*]}+${#all_samples_cond1_pos[*]}))
 		
+		if [[ $(wc -l $my_train_set|awk '{print $1}') -ne $total_samples ]];then
+		
+		  echo -e "\n-> cross validation design in $my_train_set, doesn't match nb retrieved samples in $matrix_file !"
+		  
+		  exit
+		
+		
+		fi
 		
 		if [[ ! -f ${output_dir}train${one_train_pos}_result.tsv.gz ]];then
 		
